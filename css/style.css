@@ -19,6 +19,116 @@
     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
 }
 
-section, footer {
+.section, footer {
     padding: 20px 0 0.1px;
 }
+
+.choose-area  {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: relative;
+  }
+  
+  .headline {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .headline-shadow h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .headline-shadow p {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+  }
+  
+  .choose-left {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .choose-right {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bg-choose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 12, 59, 0.95); /* ungu gelap semi transparan */
+    z-index: 1;
+  }
+  
+  .choose-item {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .choose-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .choose-item li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .choose-icon {
+    background-color: #3c2660;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .choose-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .choose-text {
+    flex: 1;
+  }
+
+  .choose-text h3 {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .choose-text p {
+    font-size: 5px;
+    color: #ddd;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .projects img {
+    width: 100%;
+    height: 200px; /* Sesuaikan tinggi yang diinginkan */
+    object-fit: cover;
+    border-radius: 8px; /* opsional untuk tampilan membulat */
+  }
