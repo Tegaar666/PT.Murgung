@@ -24,7 +24,7 @@ include 'header.php';
                     </div>
                 </li>
                 <li>
-                    <img src="img/slider/project-3.jpeg">
+                    <img src="img/project/project-5.jpeg">
                     <div class="caption right-align">
                         <h3>Interior Design</h3>
                         <h5 class="light grey-text text-lighten-3">Dalam dunia Arsitektur, warnapun berperan penting.</h5>
@@ -40,11 +40,13 @@ include 'header.php';
                     <h3 class="center light black-text text-darken-2">Visi & Misi</h3>
                     <div class="center col m6">
                         <h5>Visi</h5>
-                        <p class="light">Menjadi Perusahaan Jasa dengan Kualifikasi & Kompetensi yang handal serta berorientasi Bisnis secara Profesional.</p>
+                        <p class="light">- Menjadi Perusahaan Jasa Konstruksi dengan kualifikasi dan kompetensi yang handal serta berorientasi bisnis secara professional.</p>
+                         <p class="light">- Meningkatkan, mengembangkan kemampuan dalam bidang konstruksi untuk memenuhi kebutuhan dan bermanfaat bagi masyarakat pengguna.</p>
                     </div>
                     <div class="center col m6">
                         <h5>Misi</h5>
-                        <p class="light">Menciptakan lapangan kerja berkualitas, dan menjadi sebuah perusahaan jasa yang mengutamakan kepuasan pelanggan untuk menjamin tumbuhnya kepercayaan dan menjadi mitra terdepan.</p>
+                        <p class="light">- Menciptakan lapangan kerja berkualitas, dan menjadi sebuah perusahaan jasa yang mengutamakan kepuasan pelanggan untuk menjamin tumbuhnya kepercayaan dan menjadi mitra terdepan.</p>
+                        <p class="light">- Membangun Bisnis dan Aset Produktif secara terintegrasi guna memberikan Manfaat & Pelayanan yang Luas Kepada, Masyarakat, Bangsa dan Negara.</p>
                     </div>
                     </div>
             </div>
@@ -91,33 +93,33 @@ include 'header.php';
         <div class="col s12" style="margin-bottom: 20px;">
           <div class="valign-wrapper" style="margin-bottom: 5px;">
             <i class="material-icons left" style="font-size: 24px; margin-right: 10px;">workspace_premium</i>
-            <span class="yellow-text text-lighten-1" style="font-size: 16px; font-weight: bold;">Kami Berpengalaman Lebih Dari 10 Tahun</span>
+            <span class="green-text text-lighten-3" style="font-size: 16px; font-weight: bold;">Kami Berpengalaman Lebih Dari 10 Tahun</span>
           </div>
-          <p style="font-size: 14px; margin-left: 34px;">Telah menangani berbagai proyek besar seperti gedung, jembatan, dan jalan.</p>
+          <p class="grey-text text-lighten-2" style="font-size: 14px; margin-left: 34px;">Telah menangani berbagai proyek besar seperti gedung, jembatan, dan jalan.</p>
         </div>
         <!-- Item 2 -->
         <div class="col s12" style="margin-bottom: 20px;">
           <div class="valign-wrapper" style="margin-bottom: 5px;">
             <i class="material-icons left" style="font-size: 24px; margin-right: 10px;">groups</i>
-            <span class="yellow-text text-lighten-1" style="font-size: 16px; font-weight: bold;">Tim Solid & Berpengalaman</span>
+            <span class="green-text text-lighten-3" style="font-size: 16px; font-weight: bold;">Tim Solid & Berpengalaman</span>
           </div>
-          <p style="font-size: 14px; margin-left: 34px;">Setiap proyek ditangani oleh tenaga ahli dan profesional di bidangnya.</p>
+          <p class="grey-text text-lighten-2" style="font-size: 14px; margin-left: 34px;">Setiap proyek ditangani oleh tenaga ahli dan profesional di bidangnya.</p>
         </div>
         <!-- Item 3 -->
         <div class="col s12" style="margin-bottom: 20px;">
           <div class="valign-wrapper" style="margin-bottom: 5px;">
             <i class="material-icons left" style="font-size: 24px; margin-right: 10px;">auto_awesome</i>
-            <span class="yellow-text text-lighten-1" style="font-size: 16px; font-weight: bold;">Berinovasi</span>
+            <span class="green-text text-lighten-3" style="font-size: 16px; font-weight: bold;">Berinovasi</span>
           </div>
-          <p style="font-size: 14px; margin-left: 34px;">Kami menggunakan teknologi terbaru dan desain terkini.</p>
+          <p class="grey-text text-lighten-2" style="font-size: 14px; margin-left: 34px;">Kami menggunakan teknologi terbaru dan desain terkini.</p>
         </div>
         <!-- Item 4 -->
         <div class="col s12">
           <div class="valign-wrapper" style="margin-bottom: 5px;">
             <i class="material-icons left" style="font-size: 24px; margin-right: 10px;">bolt</i>
-            <span class="yellow-text text-lighten-1" style="font-size: 16px; font-weight: bold;">Tantangan Bukan Halangan</span>
+            <span class="green-text text-lighten-3" style="font-size: 16px; font-weight: bold;">Tantangan Bukan Halangan</span>
           </div>
-          <p style="font-size: 14px; margin-left: 34px;">Kami selalu siap menghadapi dan menyelesaikan tantangan di lapangan.</p>
+          <p class="grey-text text-lighten-2" style="font-size: 14px; margin-left: 34px;">Kami selalu siap menghadapi dan menyelesaikan tantangan di lapangan.</p>
         </div>
       </div>
     </div>
@@ -132,7 +134,7 @@ include 'header.php';
                 <h3 class="light center grey-text text-darken-2">Projects</h3>
                 <div class="row">
                     <div class="col m3 s12">
-                        <img src="img/IMG_20191216_094310_226.jpeg" class="responsive-img materialboxed" data-caption="">
+                        <img src="img/project/project-8.jpeg" class="responsive-img materialboxed" data-caption="">
                     </div>
                     <div class="col m3 s12">
                         <img src="img/slider/project-2.jpeg" class="responsive-img materialboxed" data-caption="">

@@ -8,9 +8,9 @@ if(isset($_SESSION['kd_cs'])){
 ?>
 
  <!-- footer -->
-  <body>
+<body>
     
- <footer class="center white-text" style="background-color: #6F826A;">
+ <footer class="center white-text" style="background-color: #4a6c45;">
     <p>&copy; Copyright 2025 - PT. Murgung Nusa Parama</p>
 </footer>
 
