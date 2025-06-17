@@ -112,7 +112,7 @@ $projects = mysqli_query($conn, "SELECT * FROM t_data ORDER BY tanggal_dimulai_p
         <button class="btn filter-btn" data-filter="rumah">Rumah</button>
         <button class="btn filter-btn" data-filter="gedung">Gedung</button>
         <button class="btn filter-btn" data-filter="jalan">Jalan</button>
-        <button class="btn filter-btn" data-filter="other">Other</button>
+        <button class="btn filter-btn" data-filter="lainnya">Lainnya</button>
       </div>
 
       <!-- Card Dinamis dari DB -->
@@ -122,7 +122,7 @@ $projects = mysqli_query($conn, "SELECT * FROM t_data ORDER BY tanggal_dimulai_p
           <div class="card fixed-height">
             <div class="card-image">
               <a href="project_detail.php?id=<?= $row['id']; ?>">
-                <img src="admin/img/project/<?= $row['image']; ?>" alt="<?= $row['nama_klien']; ?>">
+                <img src="admin/img/project/<?= $row['image']; ?>" alt="<?= $row['pemberi_kerja']; ?>">
               </a>
             </div>
             <div class="card-content">

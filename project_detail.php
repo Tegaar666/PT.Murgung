@@ -97,12 +97,8 @@ while ($img = mysqli_fetch_assoc($foto_lain)) {
   <table class="highlight project-table">
     <tbody>
       <tr>
-        <td><strong>Nama Klien</strong></td>
-        <td><?= $data['nama_klien']; ?></td>
-      </tr>
-      <tr>
-        <td><strong>Perusahaan</strong></td>
-        <td><?= $data['nama_perusahaan']; ?></td>
+        <td><strong>Pemberi Kerja</strong></td>
+        <td><?= $data['pemberi_kerja']; ?></td>
       </tr>
       <tr>
         <td><strong>Tanggal Mulai</strong></td>
@@ -119,7 +115,7 @@ while ($img = mysqli_fetch_assoc($foto_lain)) {
       <td>Rp <?= number_format($data['nilai_kontrak'], 0, ',', '.'); ?></td>
       </tr>
 
-        <td><strong>Deskripsi</strong></td>
+        <td><strong>Nama Pekerjaan</strong></td>
         <td><?= nl2br($data['deskripsi']); ?></td>
       </tr>
     </tbody>

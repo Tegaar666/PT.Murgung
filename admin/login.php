@@ -15,7 +15,7 @@ if (isset($_POST['login'])) {
             $_SESSION['admin'] = $data['username'];
             $_SESSION['admin_id'] = $data['id'];
             mysqli_query($conn, "INSERT INTO log_aktivitas (admin_id, aktivitas) VALUES ('{$data['id']}', 'Login')");
-            header("Location: dashboard.php");
+            header("Location: index.php");
             exit;
         } else {
             echo "<script>alert('Password salah!');</script>";

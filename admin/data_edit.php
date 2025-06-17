@@ -11,8 +11,7 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM t_data WHERE id = 
 
 if (isset($_POST['edit'])) {
   $nama_proyek = $_POST['nama_proyek'];
-  $nama_klien = $_POST['nama_klien'];
-  $nama_perusahaan = $_POST['nama_perusahaan'];
+  $pemberi_kerja = $_POST['pemberi_kerja'];
   $deskripsi = $_POST['deskripsi'];
   $tgl_mulai = $_POST['tanggal_mulai'];
   $tgl_selesai = $_POST['tanggal_selesai'];
@@ -40,8 +39,7 @@ if (isset($_POST['edit'])) {
             mysqli_query($conn, "UPDATE t_data SET 
               image='$namaBaru',
               nama_proyek='$nama_proyek',
-              nama_klien='$nama_klien',
-              nama_perusahaan='$nama_perusahaan',
+              pemberi_kerja='$pemberi_kerja',
               deskripsi='$deskripsi',
               tanggal_dimulai_proyek='$tgl_mulai',
               tanggal_selesai_proyek='$tgl_selesai',
@@ -54,8 +52,7 @@ if (isset($_POST['edit'])) {
         // Update tanpa ubah gambar
        mysqli_query($conn, "UPDATE t_data SET 
     nama_proyek='$nama_proyek',
-    nama_klien='$nama_klien',
-    nama_perusahaan='$nama_perusahaan',
+    pemberi_kerja='$pemberi_kerja',
     deskripsi='$deskripsi',
     tanggal_dimulai_proyek='$tgl_mulai',
     tanggal_selesai_proyek='$tgl_selesai',
@@ -67,7 +64,7 @@ if (isset($_POST['edit'])) {
 
     // Catat log
     mysqli_query($conn, "INSERT INTO log_aktivitas (admin_id, aktivitas) VALUES ('{$_SESSION['admin_id']}', 'Edit project ID: $id')");
-    header("Location: dashboard.php");
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -87,7 +84,7 @@ if (isset($_POST['edit'])) {
       <h4>Admin Panel</h4>
       <hr>
       <ul class="nav flex-column">
-        <li class="nav-item"><a href="dashboard.php" class="nav-link text-white">📂 Kelola Project</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link text-white">📂 Kelola Project</a></li>
         <li class="nav-item"><a href="log.php" class="nav-link text-white">🕒 Log Aktivitas</a></li>
         <li class="nav-item"><a href="logout.php" class="nav-link text-white">🚪 Logout</a></li>
       </ul>
@@ -103,7 +100,7 @@ if (isset($_POST['edit'])) {
             <option value="jalan" <?= $data['kategori'] == 'jalan' ? 'selected' : '' ?>>Jalan</option>
             <option value="gedung" <?= $data['kategori'] == 'gedung' ? 'selected' : '' ?>>Gedung</option>
             <option value="rumah" <?= $data['kategori'] == 'rumah' ? 'selected' : '' ?>>Rumah</option>
-            <option value="other" <?= $data['kategori'] == 'other' ? 'selected' : '' ?>>Other</option>
+            <option value="lainnya" <?= $data['kategori'] == 'lainnya' ? 'selected' : '' ?>>Lainnya</option>
           </select>
         </div>
 
@@ -120,20 +117,13 @@ if (isset($_POST['edit'])) {
   <label>Nama Proyek</label>
   <input type="text" name="nama_proyek" value="<?= $data['nama_proyek'] ?>" class="form-control" required>
 </div>
-
-
         <div class="mb-3">
-          <label>Nama Klien</label>
-          <input type="text" name="nama_klien" value="<?= $data['nama_klien'] ?>" class="form-control" required>
+          <label>Pemberi Pekerjaan</label>
+          <input type="text" name="pemberi_kerja" value="<?= $data['pemberi_kerja'] ?>" class="form-control" required>
         </div>
 
         <div class="mb-3">
-          <label>Nama Perusahaan</label>
-          <input type="text" name="nama_perusahaan" value="<?= $data['nama_perusahaan'] ?>" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-          <label>Deskripsi</label>
+          <label>Nama Pekerjaan</label>
           <textarea name="deskripsi" class="form-control"><?= $data['deskripsi'] ?></textarea>
         </div>
 
@@ -154,7 +144,7 @@ if (isset($_POST['edit'])) {
 
 
         <button type="submit" name="edit" class="btn btn-primary">Simpan Perubahan</button>
-        <a href="dashboard.php" class="btn btn-secondary">Kembali</a>
+        <a href="index.php" class="btn btn-secondary">Kembali</a>
       </form>
     </div>
   </div>

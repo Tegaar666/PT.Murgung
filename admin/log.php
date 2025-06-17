@@ -26,7 +26,7 @@ $log = mysqli_query($conn, "SELECT log_aktivitas.*, admin.username FROM log_akti
       <h4>Admin Panel</h4>
       <hr>
       <ul class="nav flex-column">
-        <li class="nav-item"><a href="dashboard.php" class="nav-link text-white">📂 Kelola Proyek</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link text-white">📂 Kelola Proyek</a></li>
         <li class="nav-item"><a href="log.php" class="nav-link text-white">🕒 Log Aktivitas</a></li>
         <li class="nav-item"><a href="logout.php" class="nav-link text-white">🚪 Logout</a></li>
       </ul>

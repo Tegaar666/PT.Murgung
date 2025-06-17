@@ -11,8 +11,7 @@ if (!isset($_SESSION['admin_id'])) {
 
 if (isset($_POST['tambah'])) {
   $nama_proyek = $_POST['nama_proyek'];
-  $nama_klien = $_POST['nama_klien'];
-  $nama_perusahaan = $_POST['nama_perusahaan'];
+  $pemberi_kerja = $_POST['pemberi_kerja'];
   $deskripsi = $_POST['deskripsi'];
   $tgl_mulai = $_POST['tanggal_mulai'];
   $tgl_selesai = $_POST['tanggal_selesai'];
@@ -35,9 +34,9 @@ if (isset($_POST['tambah'])) {
 
     // Simpan ke t_data
     $query = mysqli_query($conn, "INSERT INTO t_data 
-  (image, nama_proyek, nama_klien, nama_perusahaan, deskripsi, tanggal_dimulai_proyek, tanggal_selesai_proyek, kategori, nilai_kontrak) 
+  (image, nama_proyek, pemberi_kerja, deskripsi, tanggal_dimulai_proyek, tanggal_selesai_proyek, kategori, nilai_kontrak) 
   VALUES 
-  ('$namaUtama', '$nama_proyek', '$nama_klien', '$nama_perusahaan', '$deskripsi', '$tgl_mulai', '$tgl_selesai', '$kategori', '$nilai_kontrak')");
+  ('$namaUtama', '$nama_proyek', '$pemberi_kerja', '$deskripsi', '$tgl_mulai', '$tgl_selesai', '$kategori', '$nilai_kontrak')");
 
     if ($query) {
         $id_proyek = mysqli_insert_id($conn);
@@ -59,7 +58,7 @@ if (isset($_POST['tambah'])) {
         // Simpan log aktivitas
         mysqli_query($conn, "INSERT INTO log_aktivitas (admin_id, aktivitas) 
                              VALUES ('{$_SESSION['admin_id']}', 'Tambah proyek: $nama_klien')");
-        header("Location: dashboard.php");
+        header("Location: index.php");
         exit;
     }
 }
@@ -80,7 +79,7 @@ if (isset($_POST['tambah'])) {
       <h4>Admin Panel</h4>
       <hr>
       <ul class="nav flex-column">
-        <li class="nav-item"><a href="dashboard.php" class="nav-link text-white">📂 Kelola Project</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link text-white">📂 Kelola Project</a></li>
         <li class="nav-item"><a href="log.php" class="nav-link text-white">🕒 Log Aktivitas</a></li>
         <li class="nav-item"><a href="logout.php" class="nav-link text-white">🚪 Logout</a></li>
       </ul>
@@ -107,7 +106,7 @@ if (isset($_POST['tambah'])) {
             <option value="rumah">Rumah</option>
             <option value="gedung">Gedung</option>
             <option value="jalan">Jalan</option>
-            <option value="other">Other</option>
+            <option value="lainnya">Lainnya</option>
           </select>
         </div>
 
@@ -116,19 +115,13 @@ if (isset($_POST['tambah'])) {
           <input type="text" name="nama_proyek" class="form-control" required>
         </div>
 
-
         <div class="mb-3">
-          <label>Nama Klien</label>
-          <input type="text" name="nama_klien" class="form-control" required>
+          <label>Pemberi Pekerjaan</label>
+          <input type="text" name="pemberi_kerja" class="form-control" required>
         </div>
 
         <div class="mb-3">
-          <label>Nama Perusahaan</label>
-          <input type="text" name="nama_perusahaan" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-          <label>Deskripsi</label>
+          <label>Nama Pekerjaan</label>
           <textarea name="deskripsi" class="form-control"></textarea>
         </div>
 
@@ -148,7 +141,7 @@ if (isset($_POST['tambah'])) {
         </div>
 
         <button type="submit" name="tambah" class="btn btn-success">Simpan</button>
-        <a href="dashboard.php" class="btn btn-secondary">Kembali</a>
+        <a href="index.php" class="btn btn-secondary">Kembali</a>
       </form>
     </div>
   </div>

@@ -35,7 +35,7 @@ $data_proyek = mysqli_query($conn, "SELECT * FROM t_data ORDER BY tanggal_dimula
       <hr>
       <p>👋 Hai, <strong><?= $admin['username']; ?></strong></p>
       <ul class="nav flex-column">
-        <li class="nav-item"><a href="dashboard.php" class="nav-link text-white">📂 Kelola Projects</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link text-white">📂 Kelola Projects</a></li>
         <li class="nav-item"><a href="log.php" class="nav-link text-white">🕒 Log Aktivitas</a></li>
         <li class="nav-item"><a href="logout.php" class="nav-link text-white">🚪 Logout</a></li>
       </ul>
@@ -67,9 +67,8 @@ $data_proyek = mysqli_query($conn, "SELECT * FROM t_data ORDER BY tanggal_dimula
         <thead class="table-dark">
           <tr>
             <th>Nama Proyek</th>
-            <th>Nama Klien</th>
-            <th>Perusahaan</th>
-            <th>Deskripsi</th>
+            <th>Pemberi Kerja</th>
+            <th>Nama Pekerjaan</th>
             <th>Mulai</th>
             <th>Selesai</th>
             <th>Aksi</th>
@@ -79,8 +78,7 @@ $data_proyek = mysqli_query($conn, "SELECT * FROM t_data ORDER BY tanggal_dimula
           <?php while ($row = mysqli_fetch_assoc($data_proyek)): ?>
           <tr>
             <td><?= $row['nama_proyek']; ?></td>
-            <td><?= $row['nama_klien']; ?></td>
-            <td><?= $row['nama_perusahaan']; ?></td>
+            <td><?= $row['pemberi_kerja']; ?></td>
             <td><?= $row['deskripsi']; ?></td>
             <td><?= $row['tanggal_dimulai_proyek']; ?></td>
             <td><?= $row['tanggal_selesai_proyek']; ?></td>

@@ -173,6 +173,7 @@ include 'header.php';
                   <div class="card-panel brown darken-1 center white-text">
                     <h5>Contact</h5>
                     <p>Apabila anda mau kontak kami silahkan hubungi kami dibawah ini.</p>
+                    <p> +62 821-1600-0463 / murgungnusaparama@gmail.com
                   </div>
           
                   <ul class="collection with-header">
@@ -191,7 +192,7 @@ include 'header.php';
   <a href="https://www.instagram.com/murgungindonesia/" target="_blank" class="btn btn-outline-danger rounded-circle">
     <i class="fab fa-instagram"></i>
   </a>
-  <a href="mailto:murgungint@gmail.com" class="btn btn-outline-secondary rounded-circle">
+  <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrsqnSCljKcsbZRfmlVZBHVrPGgdXQTJFzzDKcTgTMLgnwdxvjLZBNHpqhtcMQnznncjV" class="btn btn-outline-secondary rounded-circle">
     <i class="fas fa-envelope"></i>
   </a>
 </div>

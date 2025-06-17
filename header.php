@@ -65,9 +65,9 @@ body {
     <div class="row" style="margin-bottom: 0;">
       <!-- Kontak kiri -->
       <div class="col s12 m6">
-        <span><i class="fa fa-envelope"></i> murgungint@gmail.com </span>
+        <span><i class="fa fa-envelope"></i> murgungnusaparama@gmail.com </span>
         &nbsp;&nbsp;
-        <span><i class="fa fa-phone"></i> +62 821 1600 0463</span>
+        <span><i class="fa fa-phone"></i> +62 821-1600-0463</span>
       </div>
 
       <!-- Sosial Media kanan -->
